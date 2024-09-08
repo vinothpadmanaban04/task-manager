@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager with Alarm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">Task Manager</h1>
+        <div class="task-input">
+            <input type="text" id="task-name" placeholder="Task Name">
+            <input type="date" id="task-deadline">
+            <input type="time" id="task-time">
+            <select id="task-priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <div class="task-list">
+            <h2 style="color: #142d4c;"> Your Tasks</h2>
+            <ul id="task-items"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
